@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://blazorhero.github.io/sitemap.xml
+Sitemap: https://blazorhero.github.io/docs/sitemap.xml
