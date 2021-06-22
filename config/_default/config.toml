@@ -3,7 +3,7 @@ canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
 enableEmoji = true
-enableGitInfo = false
+enableGitInfo = true
 enableRobotsTXT = true
 languageCode = "en-US"
 paginate = 7
@@ -78,10 +78,22 @@ rel  = "sitemap"
 
 [module]
   [[module.mounts]]
+    source = "node_modules/@hyas/doks/archetypes"
+    target = "archetypes"
+  [[module.mounts]]
     source = "assets"
     target = "assets"
+#  [[module.mounts]]
+#    source = "node_modules/@hyas/doks/content"
+#    target = "content"
   [[module.mounts]]
-    source = "static"
+    source = "node_modules/@hyas/doks/data"
+    target = "data"
+  [[module.mounts]]
+    source = "node_modules/@hyas/doks/layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "node_modules/@hyas/doks/static"
     target = "static"
   [[module.mounts]]
     source = "node_modules/flexsearch"
@@ -89,3 +101,21 @@ rel  = "sitemap"
   [[module.mounts]]
     source = "node_modules/katex"
     target = "assets/js/vendor/katex"
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "archetypes"
+    target = "archetypes"
+  [[module.mounts]]
+    source = "data"
+    target = "data"
