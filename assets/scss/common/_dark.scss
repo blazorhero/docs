@@ -98,10 +98,6 @@ body.dark .page-links a {
   color: $body-color-dark;
 }
 
-body.dark .btn-toggle-nav a {
-  color: $body-color-dark;
-}
-
 body.dark .showcase-meta a {
   color: $body-color-dark;
 }
@@ -115,43 +111,6 @@ body.dark .docs-link:hover,
 body.dark .docs-link.active,
 body.dark .page-links a:hover {
   text-decoration: none;
-  color: $link-color-dark;
-}
-
-body.dark .btn-toggle {
-  color: $body-color-dark;
-  background-color: transparent;
-  border: 0;
-}
-
-body.dark .btn-toggle:hover,
-body.dark .btn-toggle:focus {
-  color: $body-color-dark;
-}
-
-body.dark .btn-toggle::before {
-  width: 1.25em;
-  line-height: 0;
-  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28222, 226, 230, 0.75%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
-  transition: transform 0.35s ease;
-  transform-origin: 0.5em 50%;
-  margin-bottom: 0.125rem;
-}
-
-body.dark .btn-toggle[aria-expanded="true"] {
-  color: $body-color-dark;
-}
-
-body.dark .btn-toggle[aria-expanded="true"]::before {
-  transform: rotate(90deg);
-}
-
-body.dark .btn-toggle-nav a:hover,
-body.dark .btn-toggle-nav a:focus {
-  color: $link-color-dark;
-}
-
-body.dark .btn-toggle-nav a.active {
   color: $link-color-dark;
 }
 
@@ -229,7 +188,7 @@ body.dark .docs-navigation {
 }
 
 body.dark pre code::-webkit-scrollbar-thumb {
-  background: $gray-400;
+  background: $border-dark;
 }
 
 body.dark code:not(.hljs) {
@@ -243,7 +202,7 @@ body.dark pre code:hover {
 }
 
 body.dark pre code::-webkit-scrollbar-thumb:hover {
-  background: $gray-500;
+  background: $border-dark;
 }
 
 body.dark blockquote {
@@ -270,6 +229,10 @@ body.dark .docs-toc::-webkit-scrollbar-track {
   background: $body-bg-dark;
 }
 
+body.dark .section.feature{
+  background: darken($body-bg-dark, 5%);
+}
+
 body.dark .docs-links::-webkit-scrollbar-thumb,
 body.dark .docs-toc::-webkit-scrollbar-thumb {
   background: $body-bg-dark;
@@ -280,7 +243,15 @@ body.dark .docs-toc:hover {
   scrollbar-width: thin;
   scrollbar-color: $border-dark $body-bg-dark;
 }
-
+body.dark .alert-global a {
+  color: $body-color-dark;
+}
+body.dark .alert-global {
+  background: $body-bg-dark;
+  opacity: 0.975;
+  color: $body-color-dark;
+  border: 1px solid $border-dark !important;
+}
 body.dark .docs-links:hover::-webkit-scrollbar-thumb,
 body.dark .docs-toc:hover::-webkit-scrollbar-thumb {
   background: $border-dark;
@@ -336,7 +307,11 @@ body.dark .bg-light {
 body.dark .bg-dots {
   background-image: radial-gradient($dots-dark 15%, transparent 15%);
 }
-
+body.dark .img-fade {
+  -webkit-mask: linear-gradient(to bottom, #fff 75% , transparent);
+  mask: linear-gradient(to bottom, #fff, transparent);
+  z-index: -1;
+}
 body.dark .text-muted {
   color: darken($body-color-dark, 7.5%) !important;
 }
