@@ -19,6 +19,8 @@ Doks uses npm to centralize dependency management, making it [easy to update]({{
 
 - Download and install [Node.js](https://nodejs.org/) (it includes npm) for your platform.
 
+<iframe width="850" height="500" src="https://www.youtube.com/embed/j7BxKN7HYjk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Start a new Doks project
 
 Create a new site, change directories, install dependencies, and start development server.

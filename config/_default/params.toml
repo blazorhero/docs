@@ -9,8 +9,8 @@ description = "BlazorHero is a Clean Architecture Solution Template for Blazor W
 ## Open Graph + Twitter Cards
 images = ["doks.png"]
 twitterSite = "codewithmukesh"
-twitterCreator = "iammuekshm"
-facebookAuthor = "iammuekshm"
+twitterCreator = "iammukeshm"
+facebookAuthor = "iammukeshm"
 facebookPublisher = "codewithmukesh"
 ogLocale = "en_US"
 
@@ -18,7 +18,7 @@ ogLocale = "en_US"
 schemaType = "Organization"
 schemaLogo = "logo-doks.png"
 schemaTwitter = "https://twitter.com/codewithmukesh"
-schemaLinkedIn = "https://www.linkedin.com/in/iammuekshm/"
+schemaLinkedIn = "https://www.linkedin.com/in/iammukeshm/"
 schemaGitHub = "https://github.com/blazorhero"
 schemaSection = "blog"
 
